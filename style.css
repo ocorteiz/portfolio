@@ -1,0 +1,423 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+    --color-primary: #0a162e;
+    --color-secondary: #0e1e3e;
+    --color-terciary: #153065;
+    --color-gray: #808080;
+    --color-text: #ffff;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+#demo-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.blog-slider {
+    padding: 0;
+    z-index: 1;
+}
+
+section {
+    padding: 50px 200px;
+    text-align: center;
+    display: flex;
+}
+
+section h1 {
+    font-size: 2em;
+}
+
+/* STYlE BASSA DE ROLAGEM */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 20px;
+    border: 3px solid var(--color-secondary);
+}
+
+/* HEADER MENU */
+
+header {
+    position: relative;
+    padding: 10px 200px;
+    z-index: 1;
+}
+
+header a {
+    font-size: 2em;
+    color: var(--color-text);
+    transition: .3s;
+}
+
+header a:hover {
+    color: var(--color-terciary);
+}
+
+nav#navigate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+nav#navigate a#logo {
+    font-weight: bold;
+}
+
+ul#nav-menu {
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    z-index: 1;
+}
+
+ul#nav-menu a {
+    margin: 0em 1em;
+    padding: .5em .5em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#menu-item a {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+ul#nav-menu li a:hover,
+i:hover {
+    cursor: pointer;
+}
+
+a#contact:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+div#menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div#menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: .3em 0em;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+div#menu span {
+    background-color: var(--color-text);
+}
+
+/* PROFILE */
+
+.profile {
+    padding: 0px 200px;
+    height: 95vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/images/background-01.png);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.profile .image {
+    z-index: 1;
+}
+
+.profile .image img {
+    box-shadow: 0px 0px 10px 5px var(--color-terciary);
+    width: 300px;
+    border-radius: 50%;
+}
+
+.profile .text {
+    max-width: 400px;
+    text-align: center;
+}
+
+.profile .text h1 {
+    font-weight: 500;
+    font-size: 3em;
+    margin: 20px 0 0 0;
+}
+
+.profile .text h2 {
+    font-weight: 300;
+}
+
+.profile .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.links a {
+    color: var(--color-text);
+}
+
+.links i {
+    font-size: 1.3em;
+    transition: .5s;
+}
+
+.links i:hover {
+    font-size: 1.5em;
+}
+
+/* SECTION ABOUT  */
+
+.about {
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    margin-bottom: 1em;
+}
+
+.about p {
+    text-align: justify;
+    max-width: 500px;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+/* SECTION SKILS */
+
+
+.skils {
+    background-color: var(--color-secondary);
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.skil {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: .3s ease-out;
+}
+
+.skil:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.skil img {
+    width: 70px;
+}
+
+.skil h2 {
+    font-size: 1em;
+}
+
+/* SECTIN PROJECTS */
+
+.projects {
+    gap: 50px;
+    flex-direction: column;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.project-card {
+    max-width: 300px;
+    position: relative;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: 2px 2px 0px 1px var(--color-terciary);
+    overflow: hidden;
+    display: flex;
+}
+
+.project-card img {
+    filter: opacity(40%);
+    cursor: pointer;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--color-terciary));
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .7em;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.project-card:hover .project-layer {
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.project-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: var(--color-text);
+    border-radius: 50%;
+}
+
+.project-layer a i {
+    transition: .3s;
+}
+
+.project-layer a:hover i {
+    font-size: 1.5em;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+    background-color: var(--color-secondary);
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts h2 {
+    text-align: left;
+    margin: 10px;
+    color: var(--color-gray);
+}
+
+.contacts a {
+    color: var(--color-gray);
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.contacts a:hover {
+    color: var(--color-text);
+}
+
+.form form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    width: 95%;
+}
+
+label {
+    color: var(--color-gray);
+    display: block;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+input, textarea {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 8px 5px;
+    cursor: pointer;
+    background-color: var(--color-terciary);
+    color: var(--color-text);
+    transition: .3s;
+}
+
+input:hover, textarea:hover {
+    transform: scale(1.01);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-terciary);
+    color: var(--color-text);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primary);
+}
