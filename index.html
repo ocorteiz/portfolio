@@ -7,7 +7,7 @@
     <title>CTZ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
-    <link rel="shortcut icon" href="assets/icons/html5-original.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
             <nav id="navigate">
                 <a id="logo" href="#">CTZ</span></a>
                 <ul id="nav-menu">
-                    <li id="menu-item"><a href="#">HOME</a></li>
-                    <li id="menu-item"><a>SOBRE</a></li>
-                    <li id="menu-item"><a href="#">HABILIDADES</a></li>
-                    <li id="menu-item"><a href="#">PROJETOS</a></li>
+                    <li id="menu-item"><a href="#home" class="home" >HOME</a></li>
+                    <li id="menu-item"><a href="#sobre" class="sobre" >SOBRE</a></li>
+                    <li id="menu-item"><a href="#habilidades" class="skils">HABILIDADES</a></li>
+                    <li id="menu-item"><a href="#projetos" class="projects" >PROJETOS</a></li>
                 </ul>
                 <div id="menu">
                     <span id="bar"></span>
@@ -29,27 +29,27 @@
             </nav>
         </header>
         <main>
-            <section class="profile">
+            <section id="home"  class="profile">
                 <canvas id="demo-canvas"></canvas>
-                <div class="image">
+                <div  class="image">
                     <img src="assets/images/perfil.jpg" alt="">
                 </div>
                 <div class="text">
-                    <h1>Luis Cortêz</h1>
+                    <h1 >Luis Cortêz</h1>
                     <h2>Software Developer</h2>
                     <div class="links">
                         <a href="https://linkedin.com/in/ocorteiz/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/ocorteiz"><i class="bi bi-github"></i></a>
-                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="mailto:felipecortez217@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="https://discord.com/users/Cortez#0468"><i class="bi bi-discord"></i></a>
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section id="sobre" class="about">
                 <div class="rotate">
-                    <h1>SOBRE MIM</h1>
+                    <h1  >SOBRE MIM</h1>
                 </div>
-                <p>
+                <p  >
                     Sou Estudante de Engenharia de Software pela UNDB (Unidade de Ensino Superior Dom Bosco), com foco
                     em Desenvolvimento Web. Como profissional possuo certificações de tecnologias front-end (Javascript,
                     HTML5 e CSS3) e certificações de tecnologias back-end (Java e Spring Boot), exerço o cargo de
@@ -61,64 +61,64 @@
                     de maneira a sanala com eficiência.
                 </p>
             </section>
-            <section class="skils">
-                <h1>HABILIDADES</h1>
+            <section id="habilidades" class="skils">
+                <h1  >HABILIDADES</h1>
 
                 <div class="container">
 
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/html5-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/html5.svg" alt="">
                         <div class="skil-info">
                             <h2>HTML5</h2>
                         </div>
                     </div>
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/css3-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/css3.svg" alt="">
                         <div class="skil-info">
                             <h2>CSS3</h2>
                         </div>
                     </div>
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/javascript-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/javascript.svg" alt="">
                         <div class="skil-info">
                             <h2>JAVASCRIPT</h2>
                         </div>
                     </div>
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/spring.svg" alt="">
-                        <div class="skil-info">
-                            <h2>SPRING BOOT</h2>
-                        </div>
-                    </div>
-                    <div class="skil">
-                        <img class="img-skil" src="assets/icons/git-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/git.svg" alt="">
                         <div class="skil-info">
                             <h2>GIT</h2>
                         </div>
                     </div>
                     <div class="skil">
+                        <img class="img-skil" src="assets/icons/java.svg" alt="">
+                        <div class="skil-info">
+                            <h2>JAVA</h2>
+                        </div>
+                    </div>
+                    <div class="skil">
                         <img class="img-skil" src="assets/icons/spring.svg" alt="">
                         <div class="skil-info">
                             <h2>SPRING BOOT</h2>
                         </div>
                     </div>
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/html5-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/phyton.svg" alt="">
                         <div class="skil-info">
-                            <h2>HTML5</h2>
+                            <h2>PHYTON</h2>
                         </div>
                     </div>
                     <div class="skil">
-                        <img class="img-skil" src="assets/icons/css3-original.svg" alt="">
+                        <img class="img-skil" src="assets/icons/scikitlearn.svg" alt="">
                         <div class="skil-info">
-                            <h2>CSS3</h2>
+                            <h2>SCITILEARN</h2>
                         </div>
                     </div>
 
                 </div>
             </section>
-            <section class="projects">
-                <h1>PROJETOS</h1>
+            <section id="projetos" class="projects">
+                <h1  >PROJETOS</h1>
 
                 <div class="project-container">
 
@@ -126,53 +126,54 @@
                         <img src="assets/images/background-codigo.jpg">
                         <div class="project-layer">
                             <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            <p>Api Rest para clinica de adoção animal</p>
+                            <a href="https://github.com/ocorteiz/api-adopet" target="_blank" ><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/images/image-indecor.png">
+                        <div class="project-layer">
+                            <h4>Landing Page Indecor</h4>
+                            <p>Landing Page para uma empresa de decoração</p>
+                            <a href="https://github.com/ocorteiz/page-indecor" target="_blank" ><i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
 
                     <div class="project-card">
                         <img src="assets/images/background-codigo.jpg">
                         <div class="project-layer">
-                            <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            <h4>Api Rest Screenmatch</h4>
+                            <p>Api Rest para procura de filmes</p>
+                            <a href="https://github.com/ocorteiz/api-screenmatch" target="_blank" ><i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
 
                     <div class="project-card">
+                        <img src="assets/images/image-barber.png">
+                        <div class="project-layer">
+                            <h4>Landing Page Barbearia</h4>
+                            <p>Landing Page de uma barbearia</p>
+                            <a href="https://github.com/ocorteiz/page-barber" target="_blank" ><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="project-card">
                         <img src="assets/images/background-codigo.jpg">
                         <div class="project-layer">
-                            <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            <h4>Api Rest Todolist</h4>
+                            <p>Api Rest para To-Do-List</p>
+                            <a href="https://github.com/ocorteiz/api-adopet" target="_blank" ><i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="assets/images/background-codigo.jpg">
+                        <img src="assets/images/image-card.png">
                         <div class="project-layer">
-                            <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="assets/images/background-codigo.jpg">
-                        <div class="project-layer">
-                            <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="assets/images/background-codigo.jpg">
-                        <div class="project-layer">
-                            <h4>Api Rest Adopet</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            <h4>Projeto Card</h4>
+                            <p>Projeto de card para perfumaria</p>
+                            <a href="https://github.com/ocorteiz/project-card"><i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
 
@@ -192,19 +193,19 @@
                 </div>
                 <div class="contacts">
                     <h2>CONTATOS</h2>
-                    <a href="#">
+                    <a href="mailto:felipecortez217@gmail.com" target="_blank">
                         <i class="bi bi-envelope-fill"></i>
                         <p>felipecortez217@gmail.com</p>
                     </a>
-                    <a href="https://linkedin.com/in/ocorteiz/">
+                    <a href="https://linkedin.com/in/ocorteiz/" target="_blank">
                         <i class="bi bi-linkedin"></i>
                         <p>linkedin.com/in/ocorteiz</p>
                     </a>
-                    <a href="https://github.com/ocorteiz">
+                    <a href="https://github.com/ocorteiz" target="_blank">
                         <i class="bi bi-github"></i>
                         <p>github.com/ocorteiz</p>
                     </a>
-                    <a href="#">
+                    <a href="https://discord.com/users/Cortez#0468" target="_blank">
                         <i class="bi bi-discord"></i>
                         <p>discord.gg/ocorteiz</p>
                     </a>
