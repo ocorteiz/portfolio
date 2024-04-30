@@ -3,7 +3,7 @@ const navMenu = document.querySelector('#nav-menu')
 const button = document.querySelector('#btn')
 const home = document.querySelector('.home')
 const sobre = document.querySelector('.sobre')
-const skils = document.querySelector('.skils')
+const habilidades = document.querySelector('.habilidades')
 const projects = document.querySelector('.projects')
 
 menu.addEventListener('click',() => {
@@ -24,7 +24,7 @@ sobre.addEventListener('click',() => {
   button.classList.toggle('ativo')
 })
 
-skils.addEventListener('click',() => {
+habilidades.addEventListener('click',() => {
   menu.classList.toggle('ativo')
   navMenu.classList.toggle('ativo')
   button.classList.toggle('ativo')
