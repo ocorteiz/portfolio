@@ -175,3 +175,28 @@
     }
     
 })();
+
+/* CONFIG MODAL */
+
+const divModais = document.querySelectorAll(".div-modal");
+const modais = document.querySelectorAll(".modal");
+const fecharModais = document.querySelectorAll(".fechar-modal");
+
+divModais.forEach((divModal, index) => {
+  divModal.addEventListener("click", () => {
+    modais.forEach(modal => modal.classList.remove("show"));
+    modais[index].classList.add("show");
+  });
+});
+
+fecharModais.forEach(fecharModal => {
+  fecharModal.addEventListener("click", () => {
+    modais.forEach(modal => modal.classList.remove("show"));
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!event.target.closest(".modal") && !event.target.closest(".div-modal")) {
+    modais.forEach(modal => modal.classList.remove("show"));
+  }
+});;

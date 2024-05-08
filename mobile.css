@@ -103,4 +103,31 @@
     .contacts h2 {
         text-align: center;
     }
+
+    .modal {
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .modal img {
+        width: 50px;
+    }
+
+    .modal .text {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: .9em;
+    }
+    
+    .modal p {
+        margin: 30px auto;
+        text-align: justify;
+        margin: .5em auto;
+    }
+
+    .modal h2 {
+        text-align: left;
+        margin-bottom: .5em;
+    }
+    
 }
